@@ -6,7 +6,7 @@
 - Solution URL: [Solution URL](https://github.com/aleksandrre/MyPortfolio)
 
 ## Screenshot
-![App Screenshot](https://github.com/aleksandrre/Portfolio/assets/108459639/2926487c-7b91-43fb-a553-b59c17f8bf9e)
+![App Screenshot](https://github.com/aleksandrre/MyPortfolio/assets/108459639/7a6ae824-574c-46e3-884c-b79c24540f55)
 ## Built with
 - React
 - Tailwind
