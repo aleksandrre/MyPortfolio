@@ -6,7 +6,7 @@ const ProjectsCard = ({ title, des, src, gitLink, siteLink }) => {
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
-        <a href={siteLink}>
+        <a href={siteLink} target="_blank">
           <img
             className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
             src={src}
@@ -21,14 +21,27 @@ const ProjectsCard = ({ title, des, src, gitLink, siteLink }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              <a
-                href={gitLink}
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
-              >
-                <BsGithub />
-              </a>
+
+              {gitLink ? (
+                <a
+                  href={gitLink}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
+                >
+                  <BsGithub />
+                </a>
+              ) : (
+                <span
+                  title="GitHub Link Not Available"
+                  className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-700 duration-300 cursor-default"
+                >
+                  <BsGithub />
+                </span>
+              )}
               <a
                 href={siteLink}
+                target="_blank"
                 className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
               >
                 <FaGlobe />

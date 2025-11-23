@@ -87,18 +87,21 @@ const Navbar = () => {
                   <a
                     href="https://www.facebook.com/profile.php?id=100094999940171"
                     className="bannerIcon"
+                    target="_blank"
                   >
                     <FaFacebookF />
                   </a>
                   <a
                     href="https://github.com/aleksandrre"
                     className="bannerIcon"
+                    target="_blank"
                   >
                     <FaGithub />
                   </a>
                   <a
                     href="http://linkedin.com/in/aleksandre-chokheli-640300247"
                     className="bannerIcon"
+                    target="_blank"
                   >
                     <FaLinkedinIn />
                   </a>

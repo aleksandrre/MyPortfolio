@@ -7,6 +7,10 @@ import projectThree from "./images/projects/project3.png";
 import projectFour from "./images/projects/project4.png";
 import projectFive from "./images/projects/project5.png";
 import projectSix from "./images/projects/project6.png";
+import kidea from "./images/projects/kidea.png"
+import carizma from "./images/projects/carizma.png"
+import boon from "./images/projects/boon.png"
+
 
 import contactImg from "./images/contact/contactImg.png";
 
@@ -20,4 +24,7 @@ export {
   projectFive,
   projectSix,
   contactImg,
+  kidea,
+  carizma,
+  boon
 };
