@@ -25,11 +25,11 @@ const Experience = () => {
             />
 
             <ResumeCard
-              title="Web Development Learner (Mziuri College)"
+              title="Web Development Mentor (Mziuri College)"
               subTitle="Mentor / Full-Stack Trainer"
               time="Oct 2024 - Present · 1 yr 2 mos"
               result="10/10"
-              des="Taught Full-Stack Web Development to students, focusing on MERN Stack fundamentals, modern frontend design, REST API development, and real-world project architecture. Guided students through building practical applications, improving code quality, and understanding industry standards.Mentored new developers, provided hands-on exercises, and helped shape their professional growth in JavaScript, Node.js, Express, and MongoDB."
+              des="Teaching Full-Stack Web Development, focusing on MERN Stack fundamentals, modern frontend design, REST API development, and real-world project architecture. I guide students through building practical applications, actively improving their code quality, and ensuring they understand current industry standards. I also mentor new developers, providing hands-on exercises, and help shape their professional growth in key technologies, including JavaScript, Node.js, Express, and MongoDB."
             />
 
             <ResumeCard
