@@ -3,97 +3,76 @@ import { motion } from "framer-motion";
 
 const SkillsTabs = () => {
   const sections = [
-    {
-      title: "Frontend Development",
-      skills: [
-        { name: "React.js", level: "100%" },
-        { name: "Tailwind CSS", level: "95%" },
-        { name: "TypeScript", level: "90%" },
-        { name: "JavaScript (ES6+)", level: "100%" },
-        { name: "Next.js", level: "95%" },
-        { name: "Component Architecture", level: "90%" },
-        { name: "Ant Design", level: "95%" },
-      ],
-    },
-    {
-      title: "Backend & API Engineering",
-      skills: [
-        { name: "Node.js", level: "95%" },
-        { name: "Express.js", level: "100%" },
-        { name: "REST API Architecture", level: "95%" },
-        { name: "Authentication & Authorization", level: "90%" },
-        { name: "Mongoose & MongoDB", level: "85%" },
-        { name: "Multi-tenant architecture", level: "90%" },
-        { name: "Real-time applications (Socket.io)", level: "85%" },
-      ],
-    },
-    {
-      title: "Cloud & DevOps",
-      skills: [
-        { name: "AWS (EC2, S3, IAM, CloudWatch)", level: "90%" },
-        { name: "DigitalOcean droplets", level: "85%" },
-        { name: "Vercel deployments", level: "95%" },
-        { name: "Cloudflare CDN & DNS", level: "90%" },
-        { name: "Nginx", level: "85%" },
-        { name: "PM2 process manager", level: "90%" },
-      ],
-    },
-    {
-      title: "CI/CD & Containerization",
-      skills: [
-        { name: "Docker", level: "90%" },
-        { name: "GitHub Actions", level: "85%" },
-        { name: "Automated deployments", level: "90%" },
-        { name: "Version control (Git / GitHub)", level: "100%" },
-      ],
-    },
-    {
-      title: "Monitoring, Performance & Observability",
-      skills: [
-        { name: "Grafana", level: "85%" },
-        { name: "Mux", level: "80%" },
-        { name: "New Relic", level: "85%" },
-        { name: "PagerDuty", level: "80%" },
-        { name: "Zabbix", level: "80%" },
-        { name: "Application performance optimization", level: "90%" },
-      ],
-    },
-    {
-      title: "Testing & Quality",
-      skills: [
-        { name: "Postman", level: "95%" },
-        { name: "Jest", level: "85%" },
-        { name: "Debugging / Profiling", level: "90%" },
-        { name: "Code Review Standards", level: "90%" },
-      ],
-    },
-    {
-      title: "Other Tools & Technologies",
-      skills: [
-        { name: "WebSockets", level: "85%" },
-        { name: "JSON Web Tokens", level: "90%" },
-        { name: "API Security", level: "85%" },
-        { name: "Responsive UI Systems", level: "95%" },
-        { name: "Scrum / Agile workflow", level: "90%" },
-        { name: "Asana", level: "85%" },
-        { name: "Blockchain integrations", level: "80%" },
-      ],
-    },
+    { title: "Frontend Development", skills: [
+      { name: "React.js", level: "100%" },
+      { name: "Tailwind CSS", level: "95%" },
+      { name: "TypeScript", level: "90%" },
+      { name: "JavaScript (ES6+)", level: "100%" },
+      { name: "Next.js", level: "95%" },
+      { name: "Component Architecture", level: "90%" },
+      { name: "Ant Design", level: "95%" },
+    ]},
+    { title: "Backend & API Engineering", skills: [
+      { name: "Node.js", level: "95%" },
+      { name: "Express.js", level: "100%" },
+      { name: "REST API Architecture", level: "95%" },
+      { name: "Authentication & Authorization", level: "90%" },
+      { name: "Mongoose & MongoDB", level: "85%" },
+      { name: "Multi-tenant architecture", level: "90%" },
+      { name: "Real-time applications (Socket.io)", level: "85%" },
+    ]},
+    { title: "Cloud & DevOps", skills: [
+      { name: "AWS (EC2, S3, IAM, CloudWatch)", level: "90%" },
+      { name: "DigitalOcean droplets", level: "85%" },
+      { name: "Vercel deployments", level: "95%" },
+      { name: "Cloudflare CDN & DNS", level: "90%" },
+      { name: "Nginx", level: "85%" },
+      { name: "PM2 process manager", level: "90%" },
+    ]},
+    { title: "CI/CD & Containerization", skills: [
+      { name: "Docker", level: "90%" },
+      { name: "GitHub Actions", level: "85%" },
+      { name: "Automated deployments", level: "90%" },
+      { name: "Version control (Git / GitHub)", level: "100%" },
+    ]},
+    { title: "Monitoring, Performance & Observability", skills: [
+      { name: "Grafana", level: "85%" },
+      { name: "Mux", level: "80%" },
+      { name: "New Relic", level: "85%" },
+      { name: "PagerDuty", level: "80%" },
+      { name: "Zabbix", level: "80%" },
+      { name: "Application performance optimization", level: "90%" },
+    ]},
+    { title: "Testing & Quality", skills: [
+      { name: "Postman", level: "95%" },
+      { name: "Jest", level: "85%" },
+      { name: "Debugging / Profiling", level: "90%" },
+      { name: "Code Review Standards", level: "90%" },
+    ]},
+    { title: "Other Tools & Technologies", skills: [
+      { name: "WebSockets", level: "85%" },
+      { name: "JSON Web Tokens", level: "90%" },
+      { name: "API Security", level: "85%" },
+      { name: "Responsive UI Systems", level: "95%" },
+      { name: "Scrum / Agile workflow", level: "90%" },
+      { name: "Asana", level: "85%" },
+      { name: "Blockchain integrations", level: "80%" },
+    ]},
   ];
 
   const [activeTab, setActiveTab] = useState(0);
 
   const tabClass = (isActive) =>
-    `cursor-pointer px-4 py-2 text-center border-b-4 transition-all duration-300 ${
+    `cursor-pointer flex-1 px-4 py-2 text-center border-b-4 transition-all duration-300 whitespace-nowrap ${
       isActive
         ? "border-designColor text-designColor font-semibold rounded-t-lg"
         : "border-transparent text-gray-500 hover:text-designColor hover:border-designColor"
     }`;
 
   return (
-    <div className="w-full">
-      {/* Tabs */}
-      <div className="flex flex-wrap gap-4 border-b border-gray-300 mb-6">
+    <div className="w-full mt-8">
+      {/* Tabs - one line */}
+      <div className="flex overflow-x-auto gap-4 border-b border-gray-300 mb-6 scrollbar-hide">
         {sections.map((section, index) => (
           <button
             key={index}
