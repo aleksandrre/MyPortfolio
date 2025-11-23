@@ -33,11 +33,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I'm a skilled Full Stack Developer with a strong focus on React.js. I
-          specialize in building dynamic and responsive web applications, using
-          React to create elegant user interfaces and interactive experiences.
-          With a solid foundation in both frontend and back-end development, I
-          bring a unique blend of skills to deliver efficient web solutions.
+          I'm a Senior Full Stack Developer specializing in MERN, TypeScript, React.js, Next.js, and Nest.js.
+          I build scalable, high-performance web applications with robust backends, dynamic frontends,
+          and cloud deployments on AWS, Docker, and Kubernetes. Skilled in databases, APIs, real-time systems,
+          and DevOps, I deliver production-ready solutions with precision and impact.
         </p>
       </div>
       {/* Media */}

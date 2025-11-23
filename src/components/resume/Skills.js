@@ -5,57 +5,57 @@ const SkillsTabs = () => {
   const sections = [
     { title: "Frontend Development", skills: [
       { name: "React.js", level: "100%" },
-      { name: "Tailwind CSS", level: "95%" },
-      { name: "TypeScript", level: "90%" },
+      { name: "Tailwind CSS", level: "100%" },
+      { name: "TypeScript", level: "100%" },
       { name: "JavaScript (ES6+)", level: "100%" },
       { name: "Next.js", level: "95%" },
-      { name: "Component Architecture", level: "90%" },
+      { name: "Component Architecture", level: "100%" },
       { name: "Ant Design", level: "95%" },
     ]},
     { title: "Backend & API Engineering", skills: [
-      { name: "Node.js", level: "95%" },
+      { name: "Node.js", level: "100%" },
       { name: "Express.js", level: "100%" },
-      { name: "REST API Architecture", level: "95%" },
-      { name: "Authentication & Authorization", level: "90%" },
-      { name: "Mongoose & MongoDB", level: "85%" },
-      { name: "Multi-tenant architecture", level: "90%" },
-      { name: "Real-time applications (Socket.io)", level: "85%" },
+      { name: "REST API Architecture", level: "100%" },
+      { name: "Authentication & Authorization", level: "100%" },
+      { name: "Mongoose & MongoDB", level: "100%" },
+      { name: "Multi-tenant architecture", level: "100%" },
+      { name: "Real-time applications (Socket.io)", level: "90%" },
     ]},
     { title: "Cloud & DevOps", skills: [
-      { name: "AWS (EC2, S3, IAM, CloudWatch)", level: "90%" },
-      { name: "DigitalOcean droplets", level: "85%" },
-      { name: "Vercel deployments", level: "95%" },
-      { name: "Cloudflare CDN & DNS", level: "90%" },
-      { name: "Nginx", level: "85%" },
-      { name: "PM2 process manager", level: "90%" },
+      { name: "AWS (EC2, S3, IAM, CloudWatch, ECS, EKS)", level: "100%" },
+      { name: "DigitalOcean droplets", level: "100%" },
+      { name: "Vercel deployments", level: "100%" },
+      { name: "Cloudflare CDN & DNS", level: "100%" },
+      { name: "Nginx", level: "95%" },
+      { name: "PM2 process manager", level: "95%" },
     ]},
     { title: "CI/CD & Containerization", skills: [
       { name: "Docker", level: "90%" },
-      { name: "GitHub Actions", level: "85%" },
-      { name: "Automated deployments", level: "90%" },
+      { name: "GitHub Actions", level: "100%" },
+      { name: "Automated deployments", level: "100%" },
       { name: "Version control (Git / GitHub)", level: "100%" },
     ]},
     { title: "Monitoring, Performance & Observability", skills: [
       { name: "Grafana", level: "85%" },
       { name: "Mux", level: "80%" },
-      { name: "New Relic", level: "85%" },
-      { name: "PagerDuty", level: "80%" },
+      { name: "New Relic", level: "100%" },
+      { name: "PagerDuty", level: "100%" },
       { name: "Zabbix", level: "80%" },
-      { name: "Application performance optimization", level: "90%" },
+      { name: "Application performance optimization", level: "100%" },
     ]},
     { title: "Testing & Quality", skills: [
-      { name: "Postman", level: "95%" },
-      { name: "Jest", level: "85%" },
-      { name: "Debugging / Profiling", level: "90%" },
-      { name: "Code Review Standards", level: "90%" },
+      { name: "Postman", level: "100%" },
+      { name: "Jest", level: "100%" },
+      { name: "Debugging / Profiling", level: "100%" },
+      { name: "Code Review Standards", level: "100%" },
     ]},
     { title: "Other Tools & Technologies", skills: [
-      { name: "WebSockets", level: "85%" },
-      { name: "JSON Web Tokens", level: "90%" },
-      { name: "API Security", level: "85%" },
-      { name: "Responsive UI Systems", level: "95%" },
-      { name: "Scrum / Agile workflow", level: "90%" },
-      { name: "Asana", level: "85%" },
+      { name: "WebSockets", level: "100%" },
+      { name: "JSON Web Tokens", level: "100%" },
+      { name: "API Security", level: "100%" },
+      { name: "Responsive UI Systems", level: "100%" },
+      { name: "Scrum / Agile workflow", level: "100%" },
+      { name: "Asana", level: "100%" },
       { name: "Blockchain integrations", level: "80%" },
     ]},
   ];
@@ -63,7 +63,7 @@ const SkillsTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabClass = (isActive) =>
-    `cursor-pointer flex-1 px-4 py-2 text-center border-b-4 transition-all duration-300 whitespace-nowrap ${
+    `cursor-pointer flex-1 px-4 py-2 text-center border-b-4 transition-all duration-300  ${
       isActive
         ? "border-designColor text-designColor font-semibold rounded-t-lg"
         : "border-transparent text-gray-500 hover:text-designColor hover:border-designColor"

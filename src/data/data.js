@@ -13,7 +13,8 @@ export const featuresData = [
     id: 1,
     icon: <FaLaptopCode />,
     title: "Web Development",
-    des: "Proficient in building responsive and user-friendly websites using HTML, CSS, and JavaScript. Skilled in front-end and back-end development, with experience in various web frameworks and libraries.",
+    des: "I create high-performance, responsive, and user-centric web applications, crafting elegant front-end interfaces and robust back-end systems using Node.js, Express.js, Next.js, Nest.js, MongoDB, and DevOps practices."
+
   },
   {
     id: 2,
