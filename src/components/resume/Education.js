@@ -12,28 +12,39 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2013-2019</p>
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="KOMAROVI CAMPUS SCHOOL"
-            subTitle="High School of Georgia (2013 - 2019)"
-            result="3.90/4"
-            des="Komarovi School is a prestigious institution specializing in the intensive teaching of physics and mathematics, nurturing students to excel in these subjects and equipping them for future leadership roles."
-          />
-          <ResumeCard
-            title="UG_LIMES"
-            subTitle="Programming and Robotics Academy (2014 - 2017)"
-            result="4.75/5"
-            des="UG Limes Robotics Academy is an innovative school where I've learned programming, robotics, electronics, and more. It's a leading institution in Georgia, partnering with top American companies. They offer robotics and programming in schools recognized by the Ministry of Education. Plus, they host the World Robotics Olympiad in Georgia. The academy provides a great learning environment, and now they offer certificates in both Georgian and English."
+            title="BTU (BUSINESS AND TECHNOLOGY UNIVERSITY)"
+            subTitle="DevOps Engineering Program"
+            result="100/100"
+            time="(2024 - Present)"
+            des="Specialized program focusing on modern software delivery and infrastructure automation. Core subjects included Linux Administration, AWS Cloud Infrastructure, Docker/Containerization, CI/CD Pipelines, MongoDB Administration, and Agile Methodology."
           />
           <ResumeCard
             title="TBILISI STATE UNIVERSITY"
-            subTitle="A Leading Higher Education University"
-            result="5.00/5"
-            des="Tbilisi State University is a government institution with a particularly strong Physics Faculty, known for its comprehensive coverage of topics, including quantum physics and various other physics concepts."
+            subTitle="Faculty of Physics"
+            time="(2019 - 2023)"
+            result="100/100"
+            des="Graduated from the highly-regarded Physics Faculty. Coursework included advanced analytical subjects like Quantum Mechanics, Nuclear Physics, Solid State Physics, and Theoretical Physics, cultivating advanced abstract modeling and complex problem-solving skills."
           />
+          <ResumeCard
+            title="KOMAROVI CAMPUS SCHOOL"
+            subTitle="Specialized Physics and Mathematics School"
+            time="(2013 - 2019)"
+            result="100/100"
+            des="A prestigious institution specializing in intensive Physics and Mathematics. This program provided a robust foundation in complex analytical thinking, logical deduction, and problem-solving-skills critical for advanced engineering roles."
+          />
+          <ResumeCard
+            title="UG_LIMES"
+            subTitle="Programming and Robotics Academy"
+            result="100/100"
+            time="(2014 - 2017)"
+            des="An innovative academy where I gained practical, low-level programming expertise. Coursework covered embedded systems, electronics, microcontroller programming (Arduino), and robotics, building a strong foundation in computational logic and systems integration."
+          />
+          
+          
         </div>
       </div>
       {/* part Two */}
