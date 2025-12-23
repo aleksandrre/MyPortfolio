@@ -10,6 +10,7 @@ import projectSix from "./images/projects/project6.png";
 import kidea from "./images/projects/kidea.png"
 import carizma from "./images/projects/carizma.png"
 import boon from "./images/projects/boon.png"
+import nexusAuto from"./images/projects/nexusAuto.png"
 
 
 import contactImg from "./images/contact/contactImg.png";
@@ -26,5 +27,6 @@ export {
   contactImg,
   kidea,
   carizma,
-  boon
+  boon,
+  nexusAuto
 };

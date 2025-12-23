@@ -10,6 +10,7 @@ import {
   boon,
   kidea,
   carizma,
+  nexusAuto
 } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
 
@@ -26,6 +27,17 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+        <ProjectsCard
+          title="Nexus Auto (Car Import & Auction Platform)"
+          des={
+            <>
+              Developed a comprehensive <strong>Car Import & Auction platform</strong> that streamlines the process of purchasing and transporting vehicles from global markets. The system features a real-time <strong>Auction Integration</strong> (Copart, IAAI), an advanced <strong>Shipping Calculator</strong>, and a custom <strong>Order Tracking</strong> system. Built for high performance and reliability, ensuring users can easily manage their vehicle imports from the US and UAE to Georgia.
+            </>
+          }
+          src={nexusAuto} 
+          gitLink=""
+          siteLink="https://www.nexusauto.ge/"
+        />
         <ProjectsCard
           title="BOON (Multi-Tenant Blockchain Platform)"
           des={
